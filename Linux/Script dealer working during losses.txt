@@ -1,0 +1,6 @@
+#!/bin/bash
+# This script will not PRINT any results in the shell instead it will append teh result to the 
+# Dealer_working_during_losses file, IF you decide to run this script it will create an extra entry 
+# all results will be for roulette dealer during losses ONLY
+
+cat $1_Dealer_schedule | awk -F" " '{print $1,$2,$5,$6}' | grep "$2:00:00 $3" >> Rolette_Dealers_working_during_losses 

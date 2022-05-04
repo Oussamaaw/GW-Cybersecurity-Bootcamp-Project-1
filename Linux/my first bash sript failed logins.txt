@@ -1,0 +1,6 @@
+#!/bin/bash
+#This script filters failed logins into the system and prints them to a 
+#text file
+sed s/INCORRECT_PASSWORD/ACCESS_DENIED/ LogA.txt > access_denied.txt
+awk '{print $4, $6}' access_denied.txt > filtered_logs.txt
+

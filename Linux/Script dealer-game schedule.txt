@@ -1,0 +1,14 @@
+#!/bin/bash
+# This script will echo the dealers working at all the different games when the user inputs
+# the exact date and time, the date should be in the format xxxx e.g. 0310 and the time input
+# should be the first two digits, between (o-9) of the time e.g. xx:00:00 and AM Or PM evrey
+# segment seperated by <space> e.g. 0310 02 PM. The first name will be for the BlackJack dealer
+# the second will be for the roulette  dealer and the third will be for the Texas holdem dealer  
+
+
+echo  'Hour   AM/PM     BlackJack_Dealer_FNAME LAST     Roulette_Dealer_FNAME LAST      Texas_Hold_EM_dealer_FNAME LAST'
+echo 
+
+cat $1_Dealer_schedule | grep "$2:00:00 $3" | awk -F" " '{print $1,$2           ,$3,$4,         $5,$6,          $7,$8}' 
+
+echo 

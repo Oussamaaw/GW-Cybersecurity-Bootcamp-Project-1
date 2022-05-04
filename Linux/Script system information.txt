@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# The folowing command prints information about system free memory, in human-readable format, into a text file free_mem.txt  
+free -h > ~/backups/freemem/free_mem.txt
+
+# The folowing command prints information about system disk use for all directories and sub-directories, in human-readable format, into a text file disk_usage.txt
+du -h > ~/backups/diskuse/disk_usage.txt
+
+# The folowing command prints a list of system open files by process, in human-readable format, into a text file free_mem.txt
+lsof > ~/backups/openlist/open_list.txt
+
+# The folowing command prints statistics about system disk space, in human-readable format, into a text file free_disk.txt
+df -h > ~/backups/freedisk/free_disk.txt
