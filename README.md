@@ -4,12 +4,12 @@ A Collection of Basic Linux Scripts, Network Diagrams and Azure Lab Virtual Netw
 
 The files in this repository were used to configure the network depicted below.
 
-[Network Diagram] (https://github.com/Oussamaaw/GW-Cybersecurity-Bootcamp-Project-1/blob/main/Diagrams/Azure%20Virtual%20Network%20Diagram%20with%20ELK%20Server.png)
+[Network Diagram](https://github.com/Oussamaaw/GW-Cybersecurity-Bootcamp-Project-1/blob/main/Diagrams/Azure%20Virtual%20Network%20Diagram%20with%20ELK%20Server.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above.
  Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  - [elk-playbook.yml.txt] (https://github.com/Oussamaaw/GW-Cybersecurity-Bootcamp-Project-1/blob/main/Ansible/VM%20ELK%20install%20config%20with%20docker.txt)
+  - [elk-playbook.yml.txt](https://github.com/Oussamaaw/GW-Cybersecurity-Bootcamp-Project-1/blob/main/Ansible/VM%20ELK%20install%20config%20with%20docker.txt)
 
 This document contains the following details:
 - Description of the Topology
@@ -82,7 +82,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-[docker ps] (https://github.com/Oussamaaw/GW-Cybersecurity-Bootcamp-Project-1/blob/main/Ansible/Docker%20ps.png)
+[docker ps](https://github.com/Oussamaaw/GW-Cybersecurity-Bootcamp-Project-1/blob/main/Ansible/Docker%20ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -100,11 +100,11 @@ These Beats allow us to collect the following information from each machine:
 
 - Filebeat collects data relating to the system's log files specified by the system administrater on the networks webservers and then collects log events 
   for indexing and for visual representation in Kibana for further investigation when neccessary. User should see an output similar to the following:
-[Filebeat output example] (https://github.com/Oussamaaw/GW-Cybersecurity-Bootcamp-Project-1/blob/main/Ansible/Filebeat%20Scren%20Shot2.png)
+[Filebeat output example](https://github.com/Oussamaaw/GW-Cybersecurity-Bootcamp-Project-1/blob/main/Ansible/Filebeat%20Scren%20Shot2.png)
 
 - Metricbeat is a monitoring utility that periodically records the VMs operating system's metrics as well as services running on the web servers such number of machines/webservere, 
   machines names and dockers deployed on the machines, machines uptime, CPU usage and amount of memory used. User should see an output similar to the following: 
-[Metricbeat output example] ( https://github.com/Oussamaaw/GW-Cybersecurity-Bootcamp-Project-1/blob/main/Ansible/MetricBeat%20Screenshot2.png)
+[Metricbeat output example]( https://github.com/Oussamaaw/GW-Cybersecurity-Bootcamp-Project-1/blob/main/Ansible/MetricBeat%20Screenshot2.png)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
