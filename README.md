@@ -117,5 +117,5 @@ SSH into the control node and follow the steps below:
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 - In /etc/ansible/ run sudo nano hosts and edit the file by adding [elk] and add the ELK VM private IP address and ansible_python_interpreter=/usr/bin/python3 to 
   then hosts then save CTRL + x
-- In the same directory run sudo nano ansible.cfg file and make sure the root=<your system admin> 
- -then run sudo ansible-playbook install-elk.yml
+- In the same directory run sudo nano ansible.cfg file and make sure the root= "your system admin username" 
+  then run sudo ansible-playbook install-elk.yml
