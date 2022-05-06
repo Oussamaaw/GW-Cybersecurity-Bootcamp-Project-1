@@ -61,11 +61,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                 | 20.89.94.77	        |
-| Web-1    | No                  |10.0.0.5              |
-| Web-2    | No                  |10.0.0.6              |
-| Web-3    | No                  |10.0.0.7		|
-|ELK server|No			 |10.1.0.4		|
+| Jump Box | Yes                 |73.172.26.66 	        |
+| Web-1    | No                  |10.0.0.4              |
+| Web-2    | No                  |10.0.0.4              |
+| Web-3    | No                  |10.0.0.4		|
+|ELK server| No			 |10.0.0.4		|
 	
 ### Elk Configuration
 
